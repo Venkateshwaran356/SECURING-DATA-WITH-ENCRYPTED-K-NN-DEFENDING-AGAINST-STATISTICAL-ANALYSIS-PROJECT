@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internship Project Certificate Encryption</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" media="all" >
+</head>
+<body>
+<h2>Internship Project - " SECURING DATA WITH ENCRYPTED K-NN DEFENDING AGAINST STATISTICAL ANALYSIS "</h2>
+    <h2>Certificate Encryption</h2>
+    <form action="CertificateServlet" method="post">
+        <label for="studentId">Student ID:</label>
+        <input type="text" id="studentId" name="studentId" required><br>
+        <label for="certificateData">Certificate Data:</label>
+        <textarea id="certificateData" name="certificateData" required></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Fetch Decrypted Certificate Data</h2>
+    <form action="CertificateServlet" method="get">
+        <label for="fetchStudentId">Student ID:</label>
+        <input type="text" id="fetchStudentId" name="studentId" required><br>
+        <input type="submit" value="Fetch Data">
+    </form>
+</body>
+</html>
